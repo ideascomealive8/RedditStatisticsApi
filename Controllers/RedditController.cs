@@ -13,8 +13,6 @@ public class RedditController : ControllerBase
         _redditService = redditService;
     }
 
-
-
     [HttpGet("Stats")]
     public async Task<IActionResult> GetRedditStats()
     {
