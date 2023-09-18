@@ -7,7 +7,6 @@ public class RedditBackgroundService : BackgroundService
     private readonly IRedditService _redditService;
     private readonly RedditConfig _redditConfig;
 
-
     public RedditBackgroundService(RedditConfig redditConfig, IRedditService redditService)
     {
         _redditConfig = redditConfig;
