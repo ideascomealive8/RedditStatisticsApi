@@ -10,8 +10,6 @@ namespace RedditStatisticsApi
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-
             builder.Services.AddControllers();
             builder.Services.AddSingleton<IRedditService, RedditService>();
             builder.Services.AddHostedService<RedditBackgroundService>();
@@ -30,10 +28,7 @@ namespace RedditStatisticsApi
             }
 
             app.UseHttpsRedirection();
-
             app.UseAuthorization();
-
-
             app.MapControllers();
 
             app.Run();
